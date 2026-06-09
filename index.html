@@ -1,175 +1,482 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      content="C#, JavaScript, HTML, CSS, ASP.NET Core, .NET Framework, Entity Framework,
-   T-SQL Server,Visual Studio, Git,REST APIs, LINQ, JSON"
+      name="description"
+      content="Ahmed Omar Darwish — Full-Stack .NET Developer specializing in ASP.NET Core, Angular, SQL Server, and Clean Architecture. Based in Alexandria, Egypt."
+    />
+    <meta
+      name="keywords"
+      content="C#, JavaScript, TypeScript, Angular, ASP.NET Core, Entity Framework, SQL Server, REST APIs, Clean Architecture, Ahmed Omar Darwish"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="imgs/Profile2.jpg">
-    <title>Ahmed Omar Profile</title>
+    <link rel="icon" type="image/png" href="imgs/Profile2.jpg" />
+    <title>Ahmed Omar Darwish | Full-Stack .NET Developer</title>
   </head>
   <body>
     <div class="container">
-      <nav>
-        </ul>
-        <h1>AHMED OMAR</h1>
-        <ul>
+      <nav class="navbar">
+        <a href="#" class="nav-brand">AHMED OMAR</a>
+        <ul class="nav-links" id="primary-nav">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#github">GitHub</a></li>
           <li><a href="#contact">Contact</a></li>
-          
         </ul>
-        <img src="imgs/burger button.png" alt="Menu Button" />
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
       </nav>
-      <div class="introduction">
+
+      <section class="introduction">
         <div class="welcome">
-          <h1>HI I'M</h1>
-          <h1>AHMED OMAR</h1>
-          <p>
-            Full-stack .NET developer, I focus on writing clean, maintainable code to deliver reliable and high-performing applications tailored to your needs.
+          <p class="hero-label">HI, I'M</p>
+          <h1 class="hero-name">AHMED OMAR</h1>
+          <p class="hero-title">Full-Stack .NET Developer</p>
+          <p class="hero-desc">
+            I build scalable, maintainable web applications with ASP.NET Core
+            and Angular — bridging business needs and technical solutions to
+            deliver impactful digital experiences.
           </p>
           <div class="contacts-me">
-            <a id="connectBtn" href="#contact">Contact me</a>
-            <a href="https://www.linkedin.com/in/ahmed-omar-darwish/" target="_blank"><img src="imgs/LinkedIn.png" alt="LinkedIn image" /></a>
-            <a href="https://github.com/AhmedOmarDarwish" target="_blank"><img src="imgs/git-hub.png" alt="git-hub image" /></a>
+            <a class="btn-primary" href="#contact">Contact me</a>
+            <a
+              class="btn-primary"
+              href="https://drive.google.com/file/d/1zQlL0PgZB9UJHD9De5u_ojFjCllds_8z/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Resume</a
+            >
+            <a
+              href="https://www.linkedin.com/in/ahmed-omar-darwish/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <img src="imgs/LinkedIn.png" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://github.com/AhmedOmarDarwish"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <img src="imgs/git-hub.png" alt="GitHub" />
+            </a>
           </div>
         </div>
-        <img src="imgs/Profile2.jpg" alt="" class="profile-pic" />
-      </div>
-      <hr  id= "about"/>
-      <div  class="about-me">
-        <img src="imgs/image 25.jpg" alt="" />
-        <h1>ABOUT ME</h1>
+        <div class="profile-pic-wrap">
+          <img
+            src="imgs/Profile2.jpg"
+            alt="Ahmed Omar Darwish"
+            class="profile-pic"
+          />
+        </div>
+      </section>
+
+      <hr id="about" />
+
+      <section id="about-section" class="about-me">
+        <h2 class="section-title">ABOUT ME</h2>
         <div class="about-me-text">
           <h3>
-            I am a full-stack .NET developer based in Alexandria, Egypt, with a strong passion for creating efficient and user-friendly web applications. I enjoy building solutions that make an impact, combining technical expertise with creativity.
+            Full-Stack .NET Developer based in Alexandria, Egypt, with a
+            Bachelor's degree in Management Information Systems from Alexandria
+            University. I specialize in end-to-end web development — from
+            responsive Angular frontends to robust ASP.NET Core backends with
+            Clean Architecture.
           </h3>
           <p>
-            When I’m not coding, I enjoy exploring new technologies, enhancing my skills, and finding inspiration in problem-solving challenges. I’m excited about opportunities to grow professionally and contribute to innovative projects.
+            Currently completing intensive training at the Information
+            Technology Institute (ITI) in Full-Stack Web & Generative AI
+            Development. Previously trained through the Digital Egypt Pioneers
+            Initiative (DEPI) in Full-Stack .NET Development. I'm passionate
+            about building solutions that make an impact and continuously
+            improving through Agile practices and modern tooling.
           </p>
-          <a href="#contact">MORE ABOUT ME</a>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-value" id="repo-count">…</span>
+              <span class="highlight-label">GitHub Repos</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value" id="follower-count">…</span>
+              <span class="highlight-label">Followers</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value">MIS</span>
+              <span class="highlight-label">Degree</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-value">ITI</span>
+              <span class="highlight-label">Training 2026</span>
+            </div>
+          </div>
+          <div class="languages">
+            <span class="lang-tag">Arabic — Native</span>
+            <span class="lang-tag">English — Good</span>
+          </div>
         </div>
-      </div>
-      <hr id="skills"/>
-      <div class="skills">
-        <h1>MY SKILLS</h1>
-        <div class="languages">
-          <h2>Programming Language</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/js colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/js.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/csharp colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/csharp.png" alt="" class="colored-skill">
-          </a>
-        </div>
-        <div class="languages">
-          <h2>Frameworks/Technologies</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/asp.net colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/asp.net.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/netframwork colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/netframwork.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/entityframwoek colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/entityframwoek.png" alt="" class="colored-skill">
-          </a>
-        </div>
-        <div class="languages">
-          <h2>Databases</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/t-sql colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/t-sql.png" alt="" class="colored-skill">
-          </a>
-          
-        </div>
-        <div class="languages">
-          <h2>Web Technologies</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/html colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/html.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/css3 colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/css3.png" alt="" class="colored-skill">
-          </a>
-        </div>
-        <div class="languages">
-          <h2>Tools</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/vscode colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/vscode.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/git colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/git.png" alt="" class="colored-skill">
-          </a>
-        </div>
-        <div class="languages">
-          <h2>Other Skills</h2>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/restAPI colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/restAPI.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/linq colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/linq.png" alt="" class="colored-skill">
-          </a>
-          <a class="skill-logo">
-            <img src="imgs/LOGOS/json colored.png" alt="" style="width: 100px;">
-            <img src="imgs/LOGOS/json.png" alt="" class="colored-skill">
-          </a>
-          
-        </div>
-      </div>
-      <hr>
+      </section>
 
+      <hr id="skills" />
 
+      <section class="skills">
+        <h2 class="section-title">MY SKILLS</h2>
+        <p class="section-subtitle">
+          Technologies and practices I use to build scalable, maintainable
+          applications.
+        </p>
 
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-logos">
+              <a class="skill-logo" title="C#">
+                <img src="imgs/LOGOS/csharp colored.png" alt="C#" />
+                <img src="imgs/LOGOS/csharp.png" alt="" class="colored-skill" />
+              </a>
+              <a class="skill-logo" title="JavaScript">
+                <img src="imgs/LOGOS/js colored.png" alt="JavaScript" />
+                <img src="imgs/LOGOS/js.png" alt="" class="colored-skill" />
+              </a>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">C#</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TypeScript</span>
+            </div>
+          </div>
 
-      <div id= "projects" class="projects">
+          <div class="skill-category">
+            <h3>Backend & APIs</h3>
+            <div class="skill-logos">
+              <a class="skill-logo" title="ASP.NET">
+                <img src="imgs/LOGOS/asp.net colored.png" alt="ASP.NET" />
+                <img
+                  src="imgs/LOGOS/asp.net.png"
+                  alt=""
+                  class="colored-skill"
+                />
+              </a>
+              <a class="skill-logo" title=".NET">
+                <img src="imgs/LOGOS/netframwork colored.png" alt=".NET" />
+                <img
+                  src="imgs/LOGOS/netframwork.png"
+                  alt=""
+                  class="colored-skill"
+                />
+              </a>
+              <a class="skill-logo" title="Entity Framework">
+                <img
+                  src="imgs/LOGOS/entityframwoek colored.png"
+                  alt="Entity Framework"
+                />
+                <img
+                  src="imgs/LOGOS/entityframwoek.png"
+                  alt=""
+                  class="colored-skill"
+                />
+              </a>
+              <a class="skill-logo" title="REST API">
+                <img src="imgs/LOGOS/restAPI colored.png" alt="REST API" />
+                <img
+                  src="imgs/LOGOS/restAPI.png"
+                  alt=""
+                  class="colored-skill"
+                />
+              </a>
+              <a class="skill-logo" title="LINQ">
+                <img src="imgs/LOGOS/linq colored.png" alt="LINQ" />
+                <img src="imgs/LOGOS/linq.png" alt="" class="colored-skill" />
+              </a>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">ASP.NET Core</span>
+              <span class="skill-tag">Web API</span>
+              <span class="skill-tag">EF Core</span>
+              <span class="skill-tag">JWT</span>
+              <span class="skill-tag">Identity</span>
+              <span class="skill-tag">Hangfire</span>
+              <span class="skill-tag">FluentValidation</span>
+              <span class="skill-tag">Serilog</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-logos">
+              <a class="skill-logo" title="HTML5">
+                <img src="imgs/LOGOS/html colored.png" alt="HTML5" />
+                <img src="imgs/LOGOS/html.png" alt="" class="colored-skill" />
+              </a>
+              <a class="skill-logo" title="CSS3">
+                <img src="imgs/LOGOS/css3 colored.png" alt="CSS3" />
+                <img src="imgs/LOGOS/css3.png" alt="" class="colored-skill" />
+              </a>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Angular</span>
+              <span class="skill-tag">Bootstrap</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">RxJS</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-logos">
+              <a class="skill-logo" title="SQL Server">
+                <img src="imgs/LOGOS/t-sql colored.png" alt="SQL Server" />
+                <img src="imgs/LOGOS/t-sql.png" alt="" class="colored-skill" />
+              </a>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">LINQ</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Architecture & Concepts</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Clean Architecture</span>
+              <span class="skill-tag">N-Tier</span>
+              <span class="skill-tag">MVC</span>
+              <span class="skill-tag">SOLID</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Design Patterns</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Methodologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Scrum</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Teamwork</span>
+              <span class="skill-tag">Collaboration</span>
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Adaptability</span>
+              <span class="skill-tag">Presentation</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Tools & DevOps</h3>
+            <div class="skill-logos">
+              <a class="skill-logo" title="Git">
+                <img src="imgs/LOGOS/git colored.png" alt="Git" />
+                <img src="imgs/LOGOS/git.png" alt="" class="colored-skill" />
+              </a>
+              <a class="skill-logo" title="VS Code">
+                <img src="imgs/LOGOS/vscode colored.png" alt="VS Code" />
+                <img src="imgs/LOGOS/vscode.png" alt="" class="colored-skill" />
+              </a>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">Visual Studio</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Swagger</span>
+              <span class="skill-tag">Azure DevOps</span>
+              <span class="skill-tag">Refit</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr id="experience" />
+
+      <section class="experience">
+        <h2 class="section-title">EXPERIENCE & EDUCATION</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">Jan 2026 — Present</div>
+            <div class="timeline-content">
+              <h3>Full-Stack Web & Generative AI Development</h3>
+              <p class="timeline-org">Information Technology Institute (ITI)</p>
+              <p>
+                Intensive training program focusing on web applications, .NET,
+                and AI integration. Graduation project: Dar — a PropTech SaaS
+                platform for property and tenant management.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Oct 2024 — Jun 2025</div>
+            <div class="timeline-content">
+              <h3>Full-Stack .NET Development</h3>
+              <p class="timeline-org">
+                Digital Egypt Pioneers Initiative (DEPI)
+              </p>
+              <p>
+                Comprehensive .NET full-stack training covering ASP.NET Core,
+                Entity Framework, and modern web development practices.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2022 — 2025</div>
+            <div class="timeline-content">
+              <h3>Technical Support & Accountant</h3>
+              <p class="timeline-org">Professional Experience</p>
+              <p>
+                Provided technical support and managed accounting operations,
+                strengthening problem-solving, communication, and organizational
+                skills in a professional environment.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2019 — 2021</div>
+            <div class="timeline-content">
+              <h3>Founder & Android Developer</h3>
+              <p class="timeline-org">Takol — Startup, Alexandria, Egypt</p>
+              <p>
+                Founded and developed a restaurant reservation and QR-based
+                ordering mobile app with group ordering, bill splitting, and a
+                real-time restaurant dashboard. Achieved 2nd place in an
+                Entrepreneurship Competition.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+              <h3>Bachelor of Information & Management Systems</h3>
+              <p class="timeline-org">
+                Faculty of Commerce, Alexandria University
+              </p>
+              <p>
+                Management Information Systems (MIS) degree bridging business
+                and technology.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">Feb 2018 — Aug 2018</div>
+            <div class="timeline-content">
+              <h3>Android Basics Nanodegree</h3>
+              <p class="timeline-org">Google (Udacity)</p>
+              <p>
+                Foundational Android development training covering UI,
+                activities, intents, and mobile app architecture.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="projects" class="projects">
         <div class="title">
-          <h1>PROJECTS</h1>
+          <h2 class="section-title">PROJECTS</h2>
           <p>
-            Here are some selected projects that showcase my passion for .NET development and my commitment to creating innovative and efficient solutions.
+            Selected projects from my GitHub and professional training —
+            showcasing Clean Architecture, full-stack .NET development, and
+            real-world business solutions.
           </p>
         </div>
+
         <div class="project-section">
           <div class="project-image">
-            <video controls>
-              <source src="imgs/E-CommerceVideo.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-          </video>
+            <div class="project-placeholder dar">
+              <span>Dar</span>
+              <small>PropTech SaaS Platform</small>
+            </div>
           </div>
           <div class="project-info">
-            <h3>E-Commerce Platform</h3>
+            <h3>Dar — PropTech SaaS Platform</h3>
             <p>
-              Developed a responsive e-commerce application using ASP.NET Core and SQL Server.
-              Implemented features like user authentication, product management, and a shopping cart.
-              
+              ITI graduation project: a modern SaaS platform for property and
+              tenant management with digital contracts, rent tracking, automated
+              invoicing, and multi-role dashboards for owners, tenants, and HOA
+              managers. Built with Angular and ASP.NET Core using Clean
+              Architecture.
             </p>
-            <h6 class="project-info-h6">PROJECT INFO</h6>
-            <div class="project-info-h6">
-              <h6>year</h6>
-              <h6>2024</h6>
+            <div class="project-info-row">
+              <h6>Year</h6>
+              <h6>2026 — In Development</h6>
             </div>
-            <div class="project-info-h6">
+            <div class="project-info-row">
               <h6>Technologies</h6>
-              <h6>ASP.NET Core, Entity Framework, Bootstrap</h6>
+              <h6>
+                ASP.NET Core, EF Core, Angular, RxJS, Tailwind CSS, SQL Server
+              </h6>
+            </div>
+            <div class="project-badge">ITI Graduation Project</div>
+          </div>
+        </div>
+
+        <div class="project-section reverse">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <span>STORIX</span>
+              <small>Smart POS & Retail System</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>STORIX — Smart POS & Multi-Branch Retail</h3>
+            <p>
+              Full-stack retail platform using Clean Architecture — unifying
+              POS, inventory, catalog, and e-commerce across multiple brands,
+              branches, and warehouses. Includes admin dashboard, POS module,
+              and customer storefront with role-based authorization.
+            </p>
+            <div class="project-info-row">
+              <h6>Year</h6>
+              <h6>2026</h6>
+            </div>
+            <div class="project-info-row">
+              <h6>Technologies</h6>
+              <h6>
+                ASP.NET Core MVC, EF Core, Identity, FluentValidation, Bootstrap
+              </h6>
             </div>
             <div class="project-links">
-              <a href="https://github.com/AhmedOmarDarwish" target="_blank">LIVE DEMO <img src="imgs/arrow.png" alt="" /> </a>
-              <a href="https://github.com/AhmedOmarDarwish" target="_blank"
-                >SEE ON GITHUB
-                <img src="imgs/git-hub-no-background.png" alt=""
+              <a
+                href="https://storix-001-site1.ntempurl.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LIVE DEMO <img src="imgs/arrow.png" alt=""
+              /></a>
+              <a
+                href="https://github.com/AhmedOmarDarwish/STORIX"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB <img src="imgs/git-hub-no-background.png" alt=""
               /></a>
             </div>
           </div>
@@ -177,28 +484,65 @@
 
         <div class="project-section">
           <div class="project-image">
-            <img src="imgs/Portfolio.gif" alt="" />
+            <div class="project-placeholder">
+              <span>SurveyBasket</span>
+              <small>Surveys REST API</small>
+            </div>
           </div>
           <div class="project-info">
-            <h3>Portfolio Website</h3>
+            <h3>SurveyBasket — Online Surveys System</h3>
             <p>
-              Designed and deployed a personal portfolio website to showcase projects and skills.
-              Focused on creating a clean and professional user interface.
+              RESTful API for managing online surveys with JWT authentication,
+              FluentValidation, Serilog structured logging, and Hangfire for
+              automated background tasks like emails and scheduling.
             </p>
-            <h6 class="project-info-h6">PROJECT INFO</h6>
-            <div class="project-info-h6">
-              <h6>year</h6>
-              <h6>2024</h6>
+            <div class="project-info-row">
+              <h6>Year</h6>
+              <h6>2025</h6>
             </div>
-            <div class="project-info-h6">
+            <div class="project-info-row">
               <h6>Technologies</h6>
-              <h6>HTML, CSS, JavaScript</h6>
+              <h6>ASP.NET Core Web API, JWT, Hangfire, Serilog, EF Core</h6>
             </div>
             <div class="project-links">
-              <a href="https://github.com/AhmedOmarDarwish" target="_blank">LIVE DEMO <img src="imgs/arrow.png" alt="" /> </a>
-              <a href="https://github.com/AhmedOmarDarwish" target="_blank"
-                >SEE ON GITHUB
-                <img src="imgs/git-hub-no-background.png" alt=""
+              <a
+                href="https://github.com/AhmedOmarDarwish/SurveyBasket"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB <img src="imgs/git-hub-no-background.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section reverse">
+          <div class="project-image">
+            <div class="project-placeholder">
+              <span>Bookify</span>
+              <small>Book Rental System</small>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Bookify — Online Book Rental Management</h3>
+            <p>
+              Admin dashboard for managing inventory, authors, book copies, and
+              active rentals. Customer-facing interface to browse books,
+              initiate rentals, and view rental history.
+            </p>
+            <div class="project-info-row">
+              <h6>Year</h6>
+              <h6>2025</h6>
+            </div>
+            <div class="project-info-row">
+              <h6>Technologies</h6>
+              <h6>ASP.NET Core MVC, EF Core, SQL Server, C#</h6>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/AhmedOmarDarwish/Bookify"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB <img src="imgs/git-hub-no-background.png" alt=""
               /></a>
             </div>
           </div>
@@ -206,61 +550,168 @@
 
         <div class="project-section">
           <div class="project-image">
-            <img src="imgs/Inventory-Control.gif" alt="" />
+            <div class="project-placeholder">
+              <span>Tech-Mart</span>
+              <small>Premium eCommerce Platform</small>
+            </div>
           </div>
           <div class="project-info">
-            <h3>Inventory Management System</h3>
+            <h3>Tech-Mart — Premium eCommerce Platform</h3>
             <p>
-              Created a system to manage inventory for a small business using ASP.NET MVC.
-              Enabled CRUD operations and integrated reporting tools.
+              Premium e-commerce web application with product catalog, shopping
+              cart, user authentication, and responsive design. Built as part of
+              full-stack .NET training.
             </p>
-            <h6 class="project-info-h6">PROJECT INFO</h6>
-            <div class="project-info-h6">
-              <h6>year</h6>
-              <h6>2024</h6>
+            <div class="project-info-row">
+              <h6>Year</h6>
+              <h6>2026</h6>
             </div>
-            <div class="project-info-h6">
+            <div class="project-info-row">
               <h6>Technologies</h6>
-              <h6>ASP.NET MVC, SQL Server</h6>
+              <h6>ASP.NET Core, Entity Framework, Bootstrap, SQL Server</h6>
             </div>
             <div class="project-links">
-              <a href="https://github.com/AhmedOmarDarwish">LIVE DEMO <img src="imgs/arrow.png" alt="" /> </a>
-              <a href="https://github.com/AhmedOmarDarwish"
-                >SEE ON GITHUB
-                <img src="imgs/git-hub-no-background.png" alt=""
+              <a
+                href="https://swootechmart.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LIVE DEMO <img src="imgs/arrow.png" alt=""
+              /></a>
+              <a
+                href="https://github.com/AhmedOmarDarwish/Tech-Mart"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SEE ON GITHUB <img src="imgs/git-hub-no-background.png" alt=""
               /></a>
             </div>
           </div>
         </div>
-      </div>
-      <hr id= "contact"/>
 
-      <div   class="lets-connect">
+      </section>
+
+      <hr id="github" />
+
+      <section class="github-section">
+        <h2 class="section-title">GITHUB</h2>
+        <p class="section-subtitle" id="github-subtitle">
+          <a
+            href="https://github.com/AhmedOmarDarwish"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@AhmedOmarDarwish</a
+          >
+          — <span id="github-repo-total">…</span> public repositories ·
+          <span id="github-tagline">Full-Stack .NET Developer</span>
+        </p>
+        <div class="github-stats">
+          <div class="stats-card" id="github-stats-card">
+            <h3 class="stats-card-title">GitHub Stats</h3>
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-item-value" id="stat-repos">…</span>
+                <span class="stat-item-label">Public Repos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item-value" id="stat-stars">…</span>
+                <span class="stat-item-label">Total Stars</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item-value" id="github-followers">…</span>
+                <span class="stat-item-label">Followers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item-value" id="github-following">…</span>
+                <span class="stat-item-label">Following</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item-value" id="stat-forks">…</span>
+                <span class="stat-item-label">Total Forks</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-item-value" id="stat-since">…</span>
+                <span class="stat-item-label">GitHub Since</span>
+              </div>
+            </div>
+          </div>
+          <div class="stats-card" id="github-langs-card">
+            <h3 class="stats-card-title">Top Languages</h3>
+            <div class="lang-bars" id="lang-bars">
+              <p class="stats-loading">Loading languages…</p>
+            </div>
+          </div>
+        </div>
+        <div class="github-repos" id="github-repos">
+          <p class="stats-loading">Loading repositories…</p>
+        </div>
+      </section>
+
+      <hr id="contact" />
+
+      <section class="lets-connect">
         <div class="text">
-          <h1>LET'S CONNECT</h1>
-          <h4>Say hello at <a href="mailto:Ahmedomar.d.t@gmail.com"> Ahmedomar.d.t@gmail.com</a></h4>
-          <h4>For more info, here’s my <a href="https://drive.google.com/file/d/1zQlL0PgZB9UJHD9De5u_ojFjCllds_8z/view" target="_blank"> resume</a></h4>
+          <h2 class="section-title">LET'S CONNECT</h2>
+          <h4>
+            Say hello at
+            <a href="mailto:Ahmedomar.d.t@gmail.com">Ahmedomar.d.t@gmail.com</a>
+          </h4>
+          <h4>Phone: <a href="tel:+201229590598">+20 122 959 0598</a></h4>
+          <h4>Location: Alexandria, Egypt</h4>
+          <h4>
+            For more info, here's my
+            <a
+              href="https://drive.google.com/file/d/1zQlL0PgZB9UJHD9De5u_ojFjCllds_8z/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              >resume</a
+            >
+          </h4>
           <div class="social-media">
-            <a href="https://github.com/AhmedOmarDarwish" target="_blank"><img src="imgs/bxl-github.svg.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/ahmed-omar-darwish/" target="_blank"><img src="imgs/bxl-linkedin.svg.png" alt="" /></a>
+            <a
+              href="https://github.com/AhmedOmarDarwish"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><img src="imgs/bxl-github.svg.png" alt="GitHub"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/ahmed-omar-darwish/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><img src="imgs/bxl-linkedin.svg.png" alt="LinkedIn"
+            /></a>
           </div>
         </div>
-        <form action="">
+        <form id="contact-form" novalidate>
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="form-honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" />
-          <label for="Email">Email</label>
-          <input type="email" name="Email" id="Email" />
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
           <label for="subject">Subject</label>
           <input type="text" name="subject" id="subject" />
-          <label for="message">message</label>
-          <textarea name="message" id="message"></textarea>
-          <button>SUBMIT</button>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+          <p class="form-status" role="status" aria-live="polite" hidden></p>
+          <button class="btn-primary form-submit" type="submit">Submit</button>
         </form>
-      </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          © 2026 Ahmed Omar Darwish. Built with passion in Alexandria, Egypt.
+        </p>
+      </footer>
     </div>
+
+    <div class="nav-overlay" aria-hidden="true"></div>
+    <script src="script.js"></script>
   </body>
-
 </html>
-
-
-
